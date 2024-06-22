@@ -1,0 +1,15 @@
+@tailwind base;
+li::marker{
+    content: "✔";
+}
+@tailwind components;
+@tailwind utilities;
+.input-with-before::before{
+    content: '';
+    width: 100%;
+    height: 12px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
